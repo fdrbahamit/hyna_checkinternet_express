@@ -164,9 +164,9 @@ app.get('/site', async (req, res) => {
     password: 'UCzGWB'
   };
 
-  proxiesFromAPI.proxiesDancuVietnam.push(newProxy);
+  proxiesFromAPI.vietnamResidentialProxies.push(newProxy);
 
-  const formattedProxies = proxiesFromAPI.proxiesDancuVietnam.map(proxy => ({
+  const formattedProxies = proxiesFromAPI.vietnamResidentialProxies.map(proxy => ({
     name: assignProxyName(proxy),
     host: proxy.ip,
     port: proxy.portHttp,
